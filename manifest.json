@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "YT Shorts Blocker",
+    "version": "1.0",
+    "description": "Blocks Shorts on YouTube",
+    "permissions": ["storage", "scripting"],
+    "host_permissions": [
+        "*://*.youtube.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "stopShorts.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": ["content.js"]
+        }
+    ]
+}
