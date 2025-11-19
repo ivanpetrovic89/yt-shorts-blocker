@@ -2,7 +2,7 @@
 const pageSelectors = {
     main: '.style-scope ytd-rich-shelf-renderer',
     sidebar: 'a#endpoint.yt-simple-endpoint.style-scope.ytd-guide-entry-renderer[title="Shorts"]',
-    channel: '#tabsContent > yt-tab-group-shape > div.yt-tab-group-shape-wiz__tabs > yt-tab-shape:nth-child(3)',
+    channel: '[tab-title="Shorts"]',
     video: 'ytd-reel-shelf-renderer',
     shortsShelf: 'grid-shelf-view-model.ytGridShelfViewModelHost.ytd-item-section-renderer',
     shortsVideos: 'ytd-video-renderer:has(ytd-thumbnail-overlay-time-status-renderer[overlay-style="SHORTS"])'
